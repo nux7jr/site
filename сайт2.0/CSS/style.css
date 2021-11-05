@@ -1,3 +1,6 @@
+:root {
+  --ff: "Roboto", sans-serif;
+}
 @font-face {
   font-family: "MuseoCyrl";
   src: url(../FONTS/MuseoCyrl.ttf);
@@ -21,28 +24,36 @@ body {
 }
 
 /* Header */
-/* Сделать margin все всего */
+/* Сделать margin  */
 header {
-  background-color: rgba(184, 190, 189, 0.582);
-  padding: 0;
+  background-color: rgba(120, 131, 128, 0.37);
+  padding: 20px 0 0 0;
   display: flex;
   margin: 0%;
   justify-content: space-between;
+  height: 100px;
 }
 header h3 {
   font: 1.5em sans-serif;
-  margin: 2% 0 0 3%;
+  margin: 3% 0 0 0;
 }
 .header-item {
   font-family: "MuseoCyrl";
   display: flex;
 }
-.contact-info {
-  padding: 3%;
+.header-item:last-child {
+  margin-right: 30px;
 }
-.contact-info p {
-  margin: 10%;
-  padding: 10%;
+.header-item:first-child {
+  margin-left: 30px;
+}
+.header-logo {
+  height: 60%;
+}
+.contact-info {
+  padding: 0%;
+  margin: 0;
+  display: inline-block;
 }
 .container-top-info {
   padding: 0;
@@ -62,12 +73,13 @@ ul {
 /* Левое меню */
 .left-menu {
   font-family: "MuseoCyrl";
+  text-align: center;
   background-color: rgba(250, 250, 250, 0.849);
   min-width: 12%;
   height: 100%;
-}
-.left-menu p {
-  text-align: center;
+  border-radius: 0 0 20px 20px;
+  margin-right: 1.5%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .left-menu ul {
   padding: 5% 5% 5% 5%;
@@ -83,12 +95,16 @@ ul {
 /* Правое меню */
 .right-menu {
   font-family: "MuseoCyrl";
+  text-align: center;
   background-color: rgba(250, 250, 250, 0.849);
   min-width: 14%;
   height: 100%;
+  border-radius: 0 0 20px 20px;
+  margin-left: 1.5%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.right-menu p {
-  text-align: center;
+.menu-links button {
+  margin-top: 10px;
 }
 .right-menu ul {
   padding: 5% 5% 5% 5%;
@@ -99,6 +115,30 @@ ul {
 }
 .right-menu li:first-child {
   padding: 0;
+}
+.btn-more-links {
+  border-radius: 10px;
+  font-weight: 500;
+}
+/* Выпадающее правое меню */
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  background: #ffffff;
+  position: absolute;
+  border-radius: 10px;
+  left: 0;
+  top: calc(100% + 1.8rem);
+  opacity: 0;
+  transform: translateY(-25px);
+  pointer-events: none;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+.dropdown > .btn-more-links:focus + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 /* Для всего меню */
 .menu-links a {
@@ -113,9 +153,9 @@ ul {
 
 .info {
   /* Указать шрифты */
-  font-family: "CM_Garden";
+  font-family: var(--ff);
   line-height: 135%;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-right: 5px;
   text-align: justify;
   margin-left: 5px;
@@ -127,14 +167,14 @@ ul {
 }
 
 .div-content {
-  background-color: rgba(250, 250, 250, 0.7);
+  background-color: rgba(250, 250, 250, 1);
   height: 100%;
 }
 
 /* Footer */
 .footer_img {
   /* Скрыл картинки для футера в плохом качестве */
-  display: none;
+  /* display: none; */
 }
 .footer-info {
   /* justify-content: flex-end;

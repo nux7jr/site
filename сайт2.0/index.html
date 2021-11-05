@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Главная</title>
-    <link href="CSS/Normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
-    <!-- подключить шрифты, 2 шт -->
 </head>
 <body>
     <div class="container-top-info">
     <header>
-        <div class="logo_name header-item">
-        <img  src="IMG/logo.png" alt="">
+        <div class="header-item">
+        <img class="header-logo" src="IMG/logo.png" alt="">
         <h3 class="header-item">КГБУ СО Дзержинский психоневрологический интернат</h3>
         </div>
         <div class="contact_info header-item">
-            <p>E-mail: ulukol@mail.ru
-                <!-- Указать емайл как EMAIL -->
-            </br>
-            <a href=Tel:(39167)9-02-46>Тел: (39167)9-02-46</a>
+            <p>E-mail: ulukol@mail.ru<br>
+                <a href=Tel:(39167)9-02-46>Тел: (39167)9-02-46</a>
             </p>
         </div>
     </header>
@@ -37,6 +37,8 @@
                 <li><a href="PAGES/about.html">О нас</a></li>
                 <li><a href="PAGES/map_site">Карта сайта</a></li>
                 <li><a href="PAGES/about_company.html">Об учреждении</a></li>
+                <li><a href="">Отзывы</a></li>
+                <li><a href="">Вакансии</a></li>
             </ul>
         </div>
     </div>
@@ -66,18 +68,16 @@
         Дополнительных платных услуг учреждение не оказывает.
         
         <a href="http://нокуоу.открытаяшкола.онлайн/form.php"><strong>АНКЕТИРОВАНИЕ. Независимая оценка</strong></a><br>
-        <a href="PDF/dekada_kach_2021.pdf">Декада качества 2021</a><br>
+        <a href="PDF/dekada_kach_2021.pdf">Декада качества 2021</a>
         <!-- covid -->
         <!-- <div class="covid-info">
         <img class="covid-info_img" src="IMG/Ris1.jpg" alt="">
         <img class="covid-info_img" src="IMG/Ris2.jpg" alt="">
         </div> -->
-        <br>
         Численность сотрудников КГБУ СО «Дзержинский психоневрологический интернат-
-        97 человек, процент защищенных от новой коронавирусной инфекции составляет 97 %.<br>
-        Получателей социальных услуг -220 человек , процент защищенных от новой коронавирусной инфекции составляет 98,1%<br>
+        97 человек, процент защищенных от новой коронавирусной инфекции составляет 97 %.
+        Получателей социальных услуг -220 человек , процент защищенных от новой коронавирусной инфекции составляет 98,1%
         </p>
-
 
     </div>
     <div class="right-menu">
@@ -87,15 +87,13 @@
         <ul>
             <li><a href="">Предмет и цели деятельности учреждения</a></li>
             <li><a href="">Медицинское отделение</a></li>
-            <li><a href="">Социально-реабилитационное отделение</a></li>
+            <!-- <li><a href="">Социально-реабилитационное отделение</a></li> -->
             <!-- <li><a href="">Порядок приёма и рассмотрения обращений</a></li> -->
-            <li><a href="">Отделение милосердия</a></li>
+            <!-- <li><a href="">Отделение милосердия</a></li> -->
             <!-- <li><a href="">Охрана труда</a></li> -->
             <li><a href="">Документы</a></li>
             <!-- <li><a href="">Персональные данные</a></li> -->
-            <li><a href="">Отзывы</a></li>
-            <li><a href="">О нас СМИ</a></li>
-            <li><a href="">Вакансии</a></li>
+            <li><a href="">СМИ о Нас</a></li>
             <!-- <li><a href="">ПЛАН МЕРОПРИЯТИЙ ПО РАЗВИВАЮЩЕМУ УХОДУ 2017-2017гг</a></li> -->
             <li><a href="">Предписания</a></li>
             <li><a href="">Госзадания</a></li>
@@ -108,7 +106,22 @@
             <li><a href="">Отчёт директора об итогах деятельности на 2019г</a></li> -->
 
             <!-- Лучше сделать не кнопкой, а пустой ссылкой с выпадающим меню -->
-            <button>Еще</button>
+            <div class="dropdown">
+                <button class="btn-more-links">Еще</button>
+                <div class="dropdown-menu">
+                    <ul>   
+                        <li><a href="">Персональные данные</a></li>
+                        <li><a href="">Социально-реабилитационное отделение</a></li>
+                        <li><a href="">Порядок приёма и рассмотрения обращений</a></li>
+                        <li><a href="">Отделение милосердия</a></li>
+                        <li><a href="">Охрана труда</a></li> 
+                        <li><a href="">Отчёт директора об итогах деятельности на 2015, 2016, 2017, 2018, 2019, 2020, 2021 года</a></li>
+                        <li><a href="">Антикоррупционная политика</a></li>
+                        <li><a href="">Взаимодействие с добровольческими (волонтёрскими) организациями</a></li>
+                        <li><a href="">ПЛАН МЕРОПРИЯТИЙ ПО РАЗВИВАЮЩЕМУ УХОДУ 2017-2017гг</a></li>
+                    </ul>
+                </div>
+            </div>
         </ul>
         </div>  
     </div>
@@ -121,8 +134,8 @@
         Тел.: (39167) 9-02-46<br>
         ulukol@mail.ru</strong></p>
         </div>
-        <selection class="footer-img">
-        <div class="footer_img">
+        <selection class="footer-image">
+        <div class="footer_image-grid">
             <a href=""><img src="IMG/kart-1.jpg" alt=""></a>
             <a href=""><img src="IMG/Kray-2.jpg" alt=""></a>
         </div>
