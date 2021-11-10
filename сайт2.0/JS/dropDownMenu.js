@@ -1,6 +1,5 @@
 document.addEventListener('click', e => {
   const isDropDownBtn = e.target.matches('[data-dropdown-button]')
-  console.log("123212")
   if (!isDropDownBtn && e.target.closest('[data-dropdown]') != null) return
 
   let currentDropdown
