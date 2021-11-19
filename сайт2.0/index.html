@@ -15,12 +15,47 @@
     <header>
         <div class="header-item">
         <img class="header-logo" src="IMG/logo.png" alt="">
-        <h3 class="header-item">КГБУ СО Дзержинский психоневрологический интернат</h3>
+        <h3 class="header-item header-text">КГБУ СО Дзержинский психоневрологический интернат</h3>
         </div>
         <div class="contact_info header-item">
             <p>E-mail: ulukol@mail.ru<br>
                 <a href=Tel:(39167)9-02-46>Тел: (39167)9-02-46</a>
             </p>
+        </div>
+        <div class="header_item switch-menu__item">
+            <span class="switch-menu__icon"></span>
+        </div>
+        <div class="burger-menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="PAGES/news.html">Новости</a></li>
+                <li><a href="PAGES/photo.html">Фотогалерея</a></li>
+                <li><a href="PAGES/rev_link.html">Обратная связь</a></li>
+                <li><a href="PAGES/about.html">О нас</a></li>
+                <li><a href="PAGES/map_site">Карта сайта</a></li>
+                <li><a href="PAGES/about_company.html">Об учреждении</a></li>
+                <li><a href="">Отзывы</a></li>
+                <li><a href="">Вакансии</a></li>
+                <li><a href="">Предмет и цели деятельности учреждения</a></li>
+                <li><a href="">Медицинское отделение</a></li>
+                <li><a href="">Социально-реабилитационное отделение</a></li>
+                <li><a href="">Порядок приёма и рассмотрения обращений</a></li>
+                <li><a href="">Отделение милосердия</a></li>
+                <li><a href="">Охрана труда</a></li>
+                <li><a href="">Документы</a></li>
+                <li><a href="">Персональные данные</a></li>
+                <li><a href="">СМИ о Нас</a></li>
+                <li><a href="">ПЛАН МЕРОПРИЯТИЙ ПО РАЗВИВАЮЩЕМУ УХОДУ 2017-2017гг</a></li>
+                <li><a href="">Предписания</a></li>
+                <li><a href="">Госзадания</a></li>
+                <li><a href="">Антикоррупционная политика</a></li>
+                <li><a href="">Взаимодействие с добровольческими (волонтёрскими) организациями</a></li>
+                <li><a href="">Отчёт директора об итогах деятельности на 2015г</a></li>
+                <li><a href="">Отчёт директора об итогах деятельности на 2016г</a></li>
+                <li><a href="">Отчёт директора об итогах деятельности на 2017г</a></li>
+                <li><a href="">Отчёт директора об итогах деятельности на 2018г</a></li>
+                <li><a href="">Отчёт директора об итогах деятельности на 2019г</a></li>
+            </ul>
         </div>
     </header>
     </div>
@@ -87,46 +122,42 @@
         <ul>
             <li><a href="">Предмет и цели деятельности учреждения</a></li>
             <li><a href="">Медицинское отделение</a></li>
-            <!-- <li><a href="">Социально-реабилитационное отделение</a></li> -->
-            <!-- <li><a href="">Порядок приёма и рассмотрения обращений</a></li> -->
-            <!-- <li><a href="">Отделение милосердия</a></li> -->
-            <!-- <li><a href="">Охрана труда</a></li> -->
             <li><a href="">Документы</a></li>
-            <!-- <li><a href="">Персональные данные</a></li> -->
             <li><a href="">СМИ о Нас</a></li>
-            <!-- <li><a href="">ПЛАН МЕРОПРИЯТИЙ ПО РАЗВИВАЮЩЕМУ УХОДУ 2017-2017гг</a></li> -->
             <li><a href="">Предписания</a></li>
             <li><a href="">Госзадания</a></li>
-            <!-- <li><a href="">Антикоррупционная политика</a></li> -->
-            <!-- <li><a href="">Взаимодействие с добровольческими (волонтёрскими) организациями</a></li> -->
-            <!-- <li><a href="">Отчёт директора об итогах деятельности на 2015г</a></li>
-            <li><a href="">Отчёт директора об итогах деятельности на 2016г</a></li>
-            <li><a href="">Отчёт директора об итогах деятельности на 2017г</a></li>
-            <li><a href="">Отчёт директора об итогах деятельности на 2018г</a></li>
-            <li><a href="">Отчёт директора об итогах деятельности на 2019г</a></li> -->
 
             <!-- Лучше сделать не кнопкой, а пустой ссылкой с выпадающим меню -->
-            <div class="dropdown">
-                <button class="btn-more-links">Еще</button>
+            <div class="dropdown" data-dropdown>
+                <button class="btn-more-links" data-dropdown-button>Еще</button>
                 <div class="dropdown-menu">
-                    <ul>   
-                        <li><a href="">Персональные данные</a></li>
-                        <li><a href="">Социально-реабилитационное отделение</a></li>
-                        <li><a href="">Порядок приёма и рассмотрения обращений</a></li>
-                        <li><a href="">Отделение милосердия</a></li>
-                        <li><a href="">Охрана труда</a></li> 
-                        <li><a href="">Отчёт директора об итогах деятельности на 2015, 2016, 2017, 2018, 2019, 2020, 2021 года</a></li>
-                        <li><a href="">Антикоррупционная политика</a></li>
-                        <li><a href="">Взаимодействие с добровольческими (волонтёрскими) организациями</a></li>
-                        <li><a href="">ПЛАН МЕРОПРИЯТИЙ ПО РАЗВИВАЮЩЕМУ УХОДУ 2017-2017гг</a></li>
-                    </ul>
+
+                    <div class="dropdown-menu--first-grid">
+                        <ul>   
+                            <li><a href="">Персональные данные</a></li>
+                            <li><a href="">Социально-реабилитационное отделение</a></li>
+                            <li><a href="">Порядок приёма и рассмотрения обращений</a></li>
+                            <li><a href="">Отделение милосердия</a></li>
+                            <li><a href="">Антикоррупционная политика</a></li>
+                            <li><a href="">Охрана труда</a></li> 
+                        </ul>
+                    </div>
+
+                    <div class="dropdown-menu--second-grid">
+                        <ul>   
+                            <li><a href="">Отчёт директора об итогах деятельности на 2015, 2016, 2017, 2018, 2019, 2020, 2021 года</a></li>
+                            <li><a href="">Отделение милосердия</a></li>
+                            <li><a href="">Взаимодействие с добровольческими (волонтёрскими) организациями</a></li>
+                            <li><a href="">ПЛАН МЕРОПРИЯТИЙ ПО РАЗВИВАЮЩЕМУ УХОДУ 2017-2017гг</a></li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </ul>
         </div>  
     </div>
 </div>
-    <div class="container">
     <footer>
         <div class="footer_info">
         <p class="contact-footer"><strong>Красноярский край, Дзержинский район,<br>
@@ -135,24 +166,24 @@
         ulukol@mail.ru</strong></p>
         </div>
         <selection class="footer-image">
-        <div class="footer_image-grid">
-            <a href=""><img src="IMG/kart-1.jpg" alt=""></a>
-            <a href=""><img src="IMG/Kray-2.jpg" alt=""></a>
+        <div class="footer_img">
+            <a href=""><img src="IMG/footer-img/kart-1.jpg" alt=""></a>
+            <a href=""><img src="IMG/footer-img/Kray-2.jpg" alt=""></a>
         </div>
         <div class="footer_img">
-            <a href=""><img src="IMG/organ-3.jpg" alt=""></a>
-            <a href=""><img src="IMG/info-4.jpg" alt=""></a>
+            <a href=""><img src="IMG/footer-img/organ-3.jpg" alt=""></a>
+            <a href=""><img src="IMG/footer-img/info-4.jpg" alt=""></a>
         </div>
         <div class="footer_img">
-            <a href=""><img src="IMG/mchs-5.jpg" alt=""></a>
-            <a href=""><img src="IMG/portal-6.jpg" alt=""></a>
+            <a href=""><img src="IMG/footer-img/mchs-5.jpg" alt=""></a>
+            <a href=""><img src="IMG/footer-img/portal-6.jpg" alt=""></a>
         </div>
         <div class="footer_img">
-            <a href=""><img src="IMG/minest-7.jpg" alt=""></a>
-            <a href=""><img src="IMG/uslugi-8.jpg" alt=""></a>
+            <a href=""><img src="IMG/footer-img/minest-7.jpg" alt=""></a>
+            <a href=""><img src="IMG/footer-img/uslugi-8.jpg" alt=""></a>
         </div>
         </selection>
     </footer>
-    </div>
+    <script src="../JS/app.js" defer></script>
 </body>
 </html>
