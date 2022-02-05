@@ -1,31 +1,29 @@
-const { notify } = require('browser-sync');
-const { src, dest, watch, series } = require('gulp');
-const browsersync = require('browser-sync').create();
+const { notify } = require("browser-sync");
+const { src, dest, watch, series } = require("gulp");
+const browsersync = require("browser-sync").create();
 
 // Browsersync Tasks
-function browsersyncServe(cb){
+function browsersyncServe(cb) {
   browsersync.init({
     server: {
-      baseDir: '.'
+      baseDir: ".",
     },
-    notify: false
+    notify: false,
   });
   cb();
 }
 
-function browsersyncReload(cb){
+function browsersyncReload(cb) {
   browsersync.reload();
   cb();
 }
 
 // Watch Task
-function watchTask(){
-  watch('*.html', browsersyncReload);
-  watch(['CSS/style.css', 'js/**/*.js'], {interval: 1000, usePolling: true}, series(browsersyncReload) );
+function watchTask() {
+  watch("*.html", browsersyncReload);
+  watch(["CSS/style.css", "js/**/*.js"], series(browsersyncReload));
 }
 
 // Default Gulp task
-exports.default = series(
-  browsersyncServe,
-  watchTask
-);
+exports.default = series(browsersyncServe, watchTask);
+// {interval: 1000, usePolling: true},

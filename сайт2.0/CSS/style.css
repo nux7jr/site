@@ -256,9 +256,10 @@ footer {
 }
 @media screen and (max-width: 900px) {
   header {
-    position: fixed;
+    /* CONTENT AFTER 900px */
+    /* position: fixed;
 
-    top: 0;
+    top: 0; */
 
     width: 100%;
   }
@@ -296,9 +297,10 @@ footer {
   .footer-image img {
     max-width: 120px;
   }
-  .div-content {
+  /* CONTENT AFTER 900px */
+  /* .div-content {
     margin-top: 110px;
-  }
+  } */
   /* burger menu */
   .burger-menu {
     display: none;
